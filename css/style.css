@@ -1,63 +1,194 @@
+/*
+    Elements: Page
+    ---
+    Default markup for page level elements
+*/
+
 html {
-  font-size: 16px;
+  font-size: 32px;
   line-height: 1.5;
   font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
   color: #111;
   padding: 24px 24px 0px;
   scroll-behavior: smooth;
+}
+body {
+  display: table;
+  padding: 6px;
+  max-width: 42em;
+  margin: 0 auto;
   background: url('heartseeker-jinx-yuumi-splash-art-uhdpaper.com-hd-mobile-7.913.jpg');
   background-size: cover;
 }
 
-body {
-  max-width: 42em;
-  margin: 0 auto;
+/*
+* Remove text-shadow in selection highlight:
+* https://twitter.com/miketaylr/status/12228805301
+*
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
 }
 
-header {
+::selection {
+  background: #44c8f5;
+  color: white;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+header,
+h1 {
   font-family: 'Brush Script MT';
-  font-size: 60px;
+  font-size: 36px;
   font-weight: normal;
   line-height: 40px;
   margin: 0 0 48px;
   text-align: center;
-  color: rgb(248, 248, 248);
-  background-color: hotpink;
-}
-
-h1,
-nav {
-  font-family: 'Brush Script MT';
-  font-size: 60px;
-  font-weight: normal;
-  line-height: 40px;
-  margin: 0 0 48px;
-  text-align: start;
-  color: rgb(248, 248, 248);
-}
-
-h1,
-nav {
   display: table;
-  padding: 5px;
+  color: rgb(248, 248, 248);
   background-color: hotpink;
-  opacity: 0.6;
+  padding: 6px;
 }
 
 h2 {
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
   display: table;
-  padding: 5px;
-  font-family: 'Brush Script MT';
-  font-size: 40px;
-  font-weight: normal;
-  line-height: 40px;
-  margin: 0 0 48px;
-  text-align: start;
-  color: rgb(0, 0, 0);
+  color: rgb(248, 248, 248);
   background-color: hotpink;
-  opacity: 0.6;
+  opacity: 0.8;
+  padding: 6px;
 }
-img {
-  max-width: 100%;
-  height: auto;
+
+h3 {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 24px;
+  display: table;
+  color: rgb(248, 248, 248);
+  background-color: hotpink;
+  opacity: 0.8;
+
+}
+
+h4,
+h5,
+h6 {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 24px;
+}
+
+p,
+ol,
+ul,
+dl,
+table,
+address,
+figure,
+nav {
+  display: table;
+  margin: 0 0 24px;
+  color: rgb(248, 248, 248);
+  background-color: hotpink;
+  opacity: 0.8;
+  padding: 6px;
+}
+
+ul,
+ol {
+  display: table;
+  padding-left: 24px;
+}
+
+li ul,
+li ol {
+  display: table;
+  margin-bottom: 0;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 23px;
+  line-height: 32px;
+  margin: 0 0 24px;
+  font-family: 'Times New Roman', serif;
+}
+blockquote * {
+  font-size: inherit;
+  line-height: inherit;
+}
+figcaption {
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 8px;
+  color: grey;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: lightgrey;
+  margin: 0 0 24px;
+}
+
+a {
+  color: royalblue;
+  transition: all 0.1s ease-out;
+}
+
+a:hover,
+a:focus {
+  color: crimson;
+}
+
+a:visited,
+a:active {
+  color: blueviolet;
+}
+table {
+  display: table;
+  width: 100%;
+  border-spacing: 0;
+}
+
+th {
+  text-align: left;
+}
+th,
+td {
+  padding: 4px 8px;
+  border-bottom: 1px solid gainsboro;
+}
+.odd {
+  background-color: whitesmoke;
+}
+
+html {
+  font-family: 'Brush Script MT';
+}
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  html {
+    padding: 48px 48px 24px;
+  }
+  h1 {
+    font-size: 58px;
+    line-height: 64px;
+  }
+}
+
+/* Large devices (landscape tablets, desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }
