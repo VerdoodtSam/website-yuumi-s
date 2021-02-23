@@ -9,6 +9,11 @@ html {
   background-size: cover;
 }
 
+body {
+  max-width: 42em;
+  margin: 0 auto;
+}
+
 header {
   font-family: 'Brush Script MT';
   font-size: 60px;
